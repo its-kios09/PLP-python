@@ -19,8 +19,10 @@ class Calculator:
         return self.a * self.b
     def division(self) -> float:
         return self.a / self.b
-
-calculation = Calculator(10, 5)
+print('Basic Calculator Program')
+first_number = int(input('Enter the first number: '))
+second_number = int(input('Enter the second number: '))
+calculation = Calculator(first_number, second_number)
 print('addition', calculation.addition())
 print('subtraction', calculation.subtraction())
 print('multiplication', calculation.multiplication())
